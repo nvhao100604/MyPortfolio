@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+header {
+    background-color: #348ae1;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+nav {
+    background-color: #34495e;
+    padding: 1em;
+    text-align: center;
+}
+nav a {
+    color: white;
+    margin: 0 1em;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    color: #3498db;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 2em;
+}
+.section {
+    background-color: white;
+    padding: 1.5em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.in-section{
+    display: flex; 
+}
+#avt{
+    height: 20vh;
+    width: 20vw;
+}
+.sub-section{
+    padding-left: 1em;
+    text-align: justify;
+}
+.section h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5em;
+}
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.skills li {
+    background-color: #3498db;
+    color: white;
+    padding: 0.5em 1em;
+    margin: 0.5em;
+    border-radius: 3px;
+}
+.projects .project {
+    margin-bottom: 1em;
+}
+.contact a {
+    color: #3498db;
+    text-decoration: none;
+}
+.contact a:hover {
+    text-decoration: underline;
+}
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

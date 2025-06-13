@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio IT - Responsive</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+        header h1 {
+            font-size: clamp(2rem, 5vw, 2.5rem);
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            font-size: clamp(1rem, 3vw, 1.2rem);
+        }
+        nav {
+            background-color: #34495e;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0.5rem 1rem;
+            font-size: clamp(0.9rem, 2.5vw, 1rem);
+        }
+        nav a:hover {
+            color: #3498db;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 1rem;
+        }
+        .section {
+            background-color: white;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .section h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.5rem;
+            font-size: clamp(1.5rem, 4vw, 1.8rem);
+            margin-bottom: 1rem;
+        }
+        .skills ul {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .skills li {
+            background-color: #3498db;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 3px;
+            font-size: clamp(0.8rem, 2vw, 0.9rem);
+        }
+        .projects .project {
+            margin-bottom: 1.5rem;
+        }
+        .project h3 {
+            font-size: clamp(1.2rem, 3vw, 1.4rem);
+            color: #2c3e50;
+        }
+        .project p {
+            font-size: clamp(0.9rem, 2.5vw, 1rem);
+        }
+        .contact a {
+            color: #3498db;
+            text-decoration: none;
+            font-size: clamp(0.9rem, 2.5vw, 1rem);
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            font-size: clamp(0.8rem, 2vw, 0.9rem);
+        }
+
+        /* Thiết kế responsive */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+            header {
+                padding: 1.5rem 0.5rem;
+            }
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav a {
+                margin: 0.5rem 0;
+            }
+            .skills ul {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: clamp(1.5rem, 6vw, 2rem);
+            }
+            header p {
+                font-size: clamp(0.8rem, 4vw, 1rem);
+            }
+            .section {
+                padding: 1rem;
+            }
+            .section h2 {
+                font-size: clamp(1.2rem, 5vw, 1.5rem);
+            }
+            .skills li {
+                padding: 0.4rem 0.8rem;
+            }
+            .project h3 {
+                font-size: clamp(1rem, 4vw, 1.2rem);
+            }
+            .project p {
+                font-size: clamp(0.8rem, 3vw, 0.9rem);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nguyễn Văn A</h1>
+        <p>Chuyên gia CNTT | Lập trình viên Web | Kỹ sư phần mềm</p>
+    </header>
+    <nav>
+        <a href="#gioi-thieu">Giới thiệu</a>
+        <a href="#ky-nang">Kỹ năng</a>
+        <a href="#du-an">Dự án</a>
+        <a href="#lien-he">Liên hệ</a>
+    </nav>
+    <div class="container">
+        <div id="gioi-thieu" class="section">
+            <h2>Giới thiệu</h2>
+            <p>Xin chào! Tôi là Nguyễn Văn A, một chuyên gia CNTT với hơn 5 năm kinh nghiệm trong phát triển web và kỹ thuật phần mềm. Tôi chuyên xây dựng các trang web responsive và ứng dụng mạnh mẽ để giải quyết các vấn đề thực tế.</p>
+        </div>
+        <div id="ky-nang" class="section skills">
+            <h2>Kỹ năng</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>React.js</li>
+                <li>Node.js</li>
+                <li>Python</li>
+                <li>SQL</li>
+                <li>Git</li>
+            </ul>
+        </div>
+        <div id="du-an" class="section projects">
+            <h2>Dự án</h2>
+            <div class="project">
+                <h3>Website Thương mại Điện tử</h3>
+                <p>Phát triển một nền tảng thương mại điện tử full-stack sử dụng React, Node.js và MongoDB. Tính năng bao gồm xác thực người dùng, tìm kiếm sản phẩm và tích hợp thanh toán.</p>
+            </div>
+            <div class="project">
+                <h3>Ứng dụng Quản lý Công việc</h3>
+                <p>Xây dựng ứng dụng quản lý công việc bằng Python và Flask. Bao gồm các tính năng như phân công nhiệm vụ, theo dõi thời hạn và tiến độ.</p>
+            </div>
+        </div>
+        <div id="lien-he" class="section contact">
+            <h2>Liên hệ</h2>
+            <p>Email: <a href="mailto:nguyenvana@example.com">nguyenvana@example.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/nguyenvana" target="_blank">linkedin.com/in/nguyenvana</a></p>
+            <p>GitHub: <a href="https://github.com/nguyenvana" target="_blank">github.com/nguyenvana</a></p>
+        </div>
+    </div>
+    <footer>
+        <p>© 2025 Nguyễn Văn A. Bản quyền thuộc về tác giả.</p>
+    </footer>
+</body>
+</html>
